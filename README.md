@@ -10,7 +10,7 @@ Players pay a small $SMASH entry per match, every entry grows the prize pool, th
 
 [![Tournament Organizer: watch the film](media/preview.gif)](https://github.com/smashandclash/tournament-organizer/releases/download/v1.0.0/tournament-organizer.mp4)
 
-**[▶ Watch the film (1080p MP4)](https://github.com/smashandclash/tournament-organizer/releases/download/v1.0.0/tournament-organizer.mp4)** · **Build yours: [docs.smashandclash.in](https://docs.smashandclash.in)**
+**[▶ Watch the film (1080p)](https://github.com/smashandclash/tournament-organizer/releases/download/v1.0.0/tournament-organizer.mp4)** · **[▶ Vertical 9:16](https://github.com/smashandclash/tournament-organizer/releases/download/v1.0.0/tournament-organizer-9x16.mp4)** · **Build yours: [docs.smashandclash.in](https://docs.smashandclash.in)**
 
 </div>
 
@@ -250,7 +250,7 @@ Any host that runs a long-lived Node 22 process with a persistent disk (for the 
 
 ## How the film was made
 
-The film shows a real devnet tournament. A headless Chrome recorder drove the app over the DevTools protocol: one seat played through real clicks (moves chosen by the SDK's `greedyMove`), the other by a bot that paid its own entry and played through the SDK. The looks scene shows the same client with `?theme=` and `?brand=`, for five made-up platforms. The edit, motion design and type were built with [HyperFrames](https://hyperframes.heygen.com); narration, music and sound effects with ElevenLabs.
+The film shows a real devnet tournament. A headless Chrome recorder drove the app over the DevTools protocol: one seat played through real clicks (moves chosen by the SDK's `greedyMove`), the other by a bot that paid its own entry and played through the SDK. The looks scene shows the same client with `?theme=` and `?brand=`, for five made-up platforms. It comes in 16:9 and a vertical 9:16 cut laid out for phones. The edit, motion design and type were built with [HyperFrames](https://hyperframes.heygen.com); narration, music and sound effects with ElevenLabs.
 
 ## Troubleshooting
 
