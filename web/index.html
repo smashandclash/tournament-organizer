@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+    <!-- the app is one scheme (the blue world): the same top colour for both -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#08aef6" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#08aef6" />
+    <meta name="color-scheme" content="light" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Tournaments" />
+    <title>Tournament Organizer</title>
+    <meta name="description" content="Tournament Organizer: Smash&amp;Clash tournaments where every match adds to the prize pool and the winner takes it all." />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/brand/mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
+    <link rel="preload" href="/fonts/LuckiestGuy-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/lilita-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/vendor/nacl.js" defer></script>
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#view">Skip to content</a>
+    <!-- the sky behind the app: soft clouds, like the game's own home screen -->
+    <svg class="defs" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="cloud" viewBox="0 0 200 110">
+          <g class="cloud-shade"><circle cx="50" cy="74" r="28" /><circle cx="92" cy="56" r="38" /><circle cx="136" cy="66" r="30" /><circle cx="166" cy="82" r="22" /><rect x="28" y="78" width="160" height="30" rx="15" /></g>
+          <g class="cloud-body"><circle cx="50" cy="68" r="28" /><circle cx="92" cy="50" r="38" /><circle cx="136" cy="60" r="30" /><circle cx="166" cy="76" r="22" /><rect x="28" y="72" width="160" height="28" rx="14" /></g>
+        </symbol>
+      </defs>
+    </svg>
+    <div class="sky" aria-hidden="true">
+      <svg class="cloud c1"><use href="#cloud" /></svg>
+      <svg class="cloud c2"><use href="#cloud" /></svg>
+      <svg class="cloud c3"><use href="#cloud" /></svg>
+    </div>
+    <div class="app" id="app">
+      <header class="appbar" id="appbar">
+        <a class="appbar-mark" href="#/" aria-label="Tournament Organizer, home"><img src="/brand/mark.svg" alt="" width="40" height="40" /><span class="brand-badge" aria-hidden="true"></span></a>
+        <h1 class="appbar-title" id="view-title">Home</h1>
+        <div class="appbar-actions" id="appbar-actions"></div>
+      </header>
+
+      <nav class="nav" aria-label="Main">
+        <a class="nav-brand" href="#/" aria-label="Tournament Organizer, home">
+          <img class="nav-logo" src="/brand/logo.svg" alt="Tournament Organizer" width="210" height="58" />
+          <img class="nav-mark" src="/brand/mark.svg" alt="" width="48" height="48" />
+          <span class="brand-word"></span>
+          <span class="brand-badge" aria-hidden="true"></span>
+        </a>
+        <ul class="nav-items" id="nav-items"></ul>
+        <div class="nav-foot" id="nav-foot"></div>
+      </nav>
+
+      <main class="view" id="view" tabindex="-1">
+        <p class="loading">Loading…</p>
+      </main>
+
+      <div class="dock" id="dock"></div>
+    </div>
+
+    <div class="game-layer" id="game" hidden></div>
+
+    <dialog class="sheet" id="sheet" aria-labelledby="sheet-title"></dialog>
+    <div class="toasts" id="toast" aria-live="polite"></div>
+  </body>
+</html>

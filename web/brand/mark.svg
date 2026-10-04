@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="t"><title id="t">Tournament Organizer</title>
+  <defs>
+  <linearGradient id="mk-sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe872"/><stop offset="1" stop-color="#ffc21a"/></linearGradient></defs>
+  <g id="mk">
+    <rect x="10" y="18" width="236" height="232" rx="62" fill="#0d1a4a"/>
+    <rect x="18" y="14" width="220" height="220" rx="56" fill="#0d1a4a"/>
+    <rect x="26" y="22" width="204" height="204" rx="48" fill="#fff"/>
+    <rect x="36" y="32" width="184" height="184" rx="40" fill="#d98a00"/>
+    <rect x="36" y="32" width="184" height="176" rx="40" fill="url(#mk-sun)"/>
+    <path d="M58 44h140a26 26 0 0 1 26 26v8c-30-16-160-16-192 0v-8a26 26 0 0 1 26-26z" fill="#fff" opacity=".55"/>
+    <g transform="translate(30 4) scale(.74)" fill="none" stroke="#0d1a4a" stroke-width="21" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M52 74H96V108H124 M52 142H96V108 M52 174H96V208H124 M52 242H96V208"/>
+      <path d="M124 108H150V158H176 M124 208H150V158"/>
+    </g>
+    <path d="M182.0,92.0L190.5,113.3L213.4,114.8L195.8,129.5L201.4,151.7L182.0,139.5L162.6,151.7L168.2,129.5L150.6,114.8L173.5,113.3Z" fill="#fff" stroke="#0d1a4a" stroke-width="12" stroke-linejoin="round" paint-order="stroke"/>
+  </g>
+</svg>

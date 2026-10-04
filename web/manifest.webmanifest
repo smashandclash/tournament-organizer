@@ -1,0 +1,17 @@
+{
+  "name": "Tournament Organizer",
+  "short_name": "Tournaments",
+  "description": "Smash&Clash tournaments: every match adds to the prize pool, the winner takes it all.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#016dcb",
+  "theme_color": "#08aef6",
+  "icons": [
+    { "src": "/brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/brand/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/brand/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/brand/mark.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

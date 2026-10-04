@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="t"><title id="t">$SMASH coin</title>
+  <defs>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe872"/><stop offset="1" stop-color="#ffc21a"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd23f"/><stop offset="1" stop-color="#d98a00"/></linearGradient>
+  </defs>
+  <!-- the coin's edge (its lip), then the face -->
+  <ellipse cx="64" cy="70" rx="58" ry="56" fill="#0d1a4a"/>
+  <ellipse cx="64" cy="66" rx="54" ry="52" fill="#b46e00"/>
+  <circle cx="64" cy="60" r="54" fill="#0d1a4a"/>
+  <circle cx="64" cy="60" r="49" fill="url(#rim)"/>
+  <circle cx="64" cy="60" r="39" fill="url(#face)" stroke="#d98a00" stroke-width="3"/>
+  <!-- the star (the Tournament Organizer's), white with an ink keyline -->
+  <path d="M64 33l7.6 15.9 17.4 2.3-12.8 12 3.2 17.3L64 72.1l-15.4 8.4 3.2-17.3-12.8-12 17.4-2.3z" fill="#fff" stroke="#0d1a4a" stroke-width="5" stroke-linejoin="round" paint-order="stroke"/>
+  <!-- gloss -->
+  <path d="M30 40a40 40 0 0 1 38-26" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+</svg>
