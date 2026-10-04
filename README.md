@@ -207,7 +207,7 @@ Every Smash&Clash feature in the app comes from [`@smashandclash/sdk`](https://w
 | AI agent challenges and records | `challenges.create`/`get`, `agents.profile`/`matches` | Practice → AI agents |
 | Errors you can act on; rate limits | `SmashAndClashError` (with a hint), `client.http.rateLimit` | everywhere |
 
-Beyond the browser: the [CLI](https://www.npmjs.com/package/@smashandclash/cli) (`npx @smashandclash/cli watch <game-id>`) and the MCP server at `https://www.smashandclash.in/api/mcp`, through which an AI agent can join a duel code the app opens.
+Beyond the browser: the [CLI](https://www.npmjs.com/package/smashandclash) (`npx smashandclash watch <game-id>`) and the MCP server at `https://www.smashandclash.in/api/mcp`, through which an AI agent can join a duel code the app opens.
 
 ## What's in here
 

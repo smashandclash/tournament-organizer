@@ -984,7 +984,7 @@ function sdkView() {
       h(
         'ul',
         { class: 'history' },
-        h('li', {}, h('span', {}, 'The CLI, for people and agents'), h('code', {}, 'npx @smashandclash/cli watch <game-id>')),
+        h('li', {}, h('span', {}, 'The CLI, for people and agents'), h('code', {}, 'npx smashandclash watch <game-id>')),
         h('li', {}, h('span', {}, 'An agent joins a duel code'), h('code', {}, 'smashandclash duel join <CODE> --strategy greedy')),
         h('li', {}, h('span', {}, 'The MCP server, for AI assistants'), h('code', {}, 'https://www.smashandclash.in/api/mcp')),
         h('li', {}, h('span', {}, 'Bots that play a whole tournament'), h('code', {}, 'npm run simulate'))
