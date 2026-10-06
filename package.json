@@ -17,7 +17,7 @@
     "simulate": "node --env-file-if-exists=.env scripts/simulate.mjs"
   },
   "dependencies": {
-    "@smashandclash/sdk": "^0.2.1",
+    "@smashandclash/sdk": "^0.5.0",
     "@solana/spl-token": "^0.4.13",
     "@solana/web3.js": "^1.98.4",
     "bs58": "^6.0.0",

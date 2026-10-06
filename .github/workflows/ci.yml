@@ -1,0 +1,22 @@
+name: CI
+
+# Every push and pull request: install from the lockfile and run the tests (the
+# tournament engine, its rules and settlement - offline, no devnet or network needed).
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: The server and scripts parse
+        run: for f in server/*.mjs scripts/*.mjs web/*.js; do node --check "$f"; done
